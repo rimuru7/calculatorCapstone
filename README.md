@@ -1,2 +1,1 @@
-This is the readme file in branchOne
-Now I am changing the file in local directory
+This is the readme file in localbranchOne branch
