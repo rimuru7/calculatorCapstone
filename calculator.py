@@ -49,3 +49,25 @@ def arccosine(x):
 # Function to get the arc tangent of a number
 def arctangent(x):
     return math.degrees(math.atan(x))
+
+# Main function to take input from user and perform calculations
+def main():
+    print("Welcome to the Trigonometric Calculator Program in Python")
+
+    while True:
+        print("Please select the operation you want to perform: ")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Modulus")
+        print("6. Power")
+        print("7. Sine")
+        print("8. Cosine")
+        print("9. Tangent")
+        print("10. Arc Sine")
+        print("11. Arc Cosine")
+        print("12. Arc Tangent")
+        print("13. Exit")
+
+        choice = input("Enter choice (1/2/3/4/5/6/7/8/9/10/11/12/13): ")
