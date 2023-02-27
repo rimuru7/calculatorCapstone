@@ -1,3 +1,5 @@
+# Basic Calculator Program in Python
+
 # Function to add two numbers
 def add(x, y):
     return x + y
@@ -23,3 +25,17 @@ def modulus(x, y):
 # Function to get the power of a number
 def power(x, y):
     return x ** y
+
+# Main function to take input from user and perform calculations
+def main():
+    print("Welcome to the Basic Calculator Program in Python")
+
+    while True:
+        print("Please select the operation you want to perform: ")
+        print("1. Add")
+        print("2. Subtract")
+        print("3. Multiply")
+        print("4. Divide")
+        print("5. Modulus")
+        print("6. Power")
+        print("7. Exit")
