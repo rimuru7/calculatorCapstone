@@ -1,3 +1,7 @@
+# Version 3.0 
+# Done By: Rushi, Mohan, Dhanunjay
+# Trigonometric Calculator Program in Python
+
 import math
 
 # Function to add two numbers
@@ -71,3 +75,60 @@ def main():
         print("13. Exit")
 
         choice = input("Enter choice (1/2/3/4/5/6/7/8/9/10/11/12/13): ")
+
+        if choice == '13':
+            break
+
+        try:
+            if choice in ['7', '8', '9', '10', '11', '12']:
+                num = float(input("Enter number: "))
+            else:
+                num1 = float(input("Enter first number: "))
+                num2 = float(input("Enter second number: "))
+
+            if choice == '1':
+                print("Result: ", add(num1, num2))
+
+            elif choice == '2':
+                print("Result: ", subtract(num1, num2))
+
+            elif choice == '3':
+                print("Result: ", multiply(num1, num2))
+
+            elif choice == '4':
+                print("Result: ", divide(num1, num2))
+
+            elif choice == '5':
+                print("Result: ", modulus(num1, num2))
+
+            elif choice == '6':
+                print("Result: ", power(num1, num2))
+
+            elif choice == '7':
+                print("Result: ", sine(num))
+
+            elif choice == '8':
+                print("Result: ", cosine(num))
+
+            elif choice == '9':
+                print("Result: ", tangent(num))
+
+            elif choice == '10':
+                print("Result: ", arcsine(num))
+
+            elif choice == '11':
+                print
+            elif choice == '12':
+                print("Result: ", arctangent(num))
+
+            else:
+                print("Invalid input, please try again")
+
+        except ValueError as e:
+            print("Error:", e)
+            continue
+
+
+if __name__ == '__main__':
+    main()
+
