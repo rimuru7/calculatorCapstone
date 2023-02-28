@@ -57,6 +57,9 @@ def logarithm(x):
     return math.log(x)
 def logarithm10(x):
     return math.log10(x)
+def calculate_percentage(number, percent):
+    return (number * percent) / 100
+
 
 # Main function to take input from user and perform calculations
 def main():
@@ -77,11 +80,12 @@ def main():
         print("11. Arc Cosine")
         print("12. Arc Tangent")
         print("13. Natural Logarithm")
-        print("14.Logarithm Base 10")
-        print("15. Exit")
-        choice = input("Enter choice (1/2/3/4/5/6/7/8/9/10/11/12/13/14/15): ")
+        print("14. Logarithm Base 10")
+        print("15. Percentage")
+        print("16. Exit")
+        choice = input("Enter choice (1/2/3/4/5/6/7/8/9/10/11/12/13/14/15/16): ")
 
-        if choice == '15':
+        if choice == '16' or choice == 'exit':
             break
 
         try:
@@ -128,7 +132,9 @@ def main():
             elif choice == '13':
                 print("Result: ", logarithm(num))
             elif choice == '14':
-                print("Result:", logarithm10(num) )    
+                print("Result:", logarithm10(num) )  
+            elif choice == '15':
+                print("Result: ", calculate_percentage(num1, num2))  
             else:
                 print("Invalid input, please try again")
 
