@@ -69,9 +69,9 @@ def main():
         print("7. Sine")
         print("8. Cosine")
         print("9. Tangent")
-        print("10. Sine Inverse")
-        print("11. Cosine Inverse")
-        print("12. Tangent Inverse")
+        print("10. Arc Sine ")
+        print("11. Arc Cosine")
+        print("12. Arc Tangent")
         print("13. Exit")
 
         choice = input("Enter choice (1/2/3/4/5/6/7/8/9/10/11/12/13): ")
