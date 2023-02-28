@@ -129,7 +129,6 @@ def main():
                 print("Result: ", logarithm(num))
             elif choice == '14':
                 print("Result:", logarithm10(num) )    
-
             else:
                 print("Invalid input, please try again")
 
