@@ -53,6 +53,8 @@ def arccosine(x):
 # Function to get the arc tangent of a number
 def arctangent(x):
     return math.degrees(math.atan(x))
+def logarithm(x):
+    return math.log(x)
 
 # Main function to take input from user and perform calculations
 def main():
@@ -72,15 +74,15 @@ def main():
         print("10. Arc Sine ")
         print("11. Arc Cosine")
         print("12. Arc Tangent")
-        print("13. Exit")
+        print("13. Natural Logarithm")
+        print("14. Exit")
+        choice = input("Enter choice (1/2/3/4/5/6/7/8/9/10/11/12/13/14): ")
 
-        choice = input("Enter choice (1/2/3/4/5/6/7/8/9/10/11/12/13): ")
-
-        if choice == '13':
+        if choice == '14':
             break
 
         try:
-            if choice in ['7', '8', '9', '10', '11', '12']:
+            if choice in ['7', '8', '9', '10', '11', '12','13']:
                 num = float(input("Enter number: "))
             else:
                 num1 = float(input("Enter first number: "))
@@ -120,6 +122,8 @@ def main():
                 print
             elif choice == '12':
                 print("Result: ", arctangent(num))
+            elif choice == '13':
+                print("Result: ", logarithm(num))
 
             else:
                 print("Invalid input, please try again")
@@ -131,4 +135,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
