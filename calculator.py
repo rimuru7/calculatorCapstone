@@ -124,6 +124,8 @@ def main():
                 print
             elif choice == '12':
                 print("Result: ", arctangent(num))
+            elif choice == '13':
+                print("Result: ", logarithm(num))
 
             else:
                 print("Invalid input, please try again")
