@@ -76,8 +76,13 @@ def main():
         print("12. Arc Tangent")
         print("13. Natural Logarithm")
         print("14. Exit")
+
+        
+
         choice = input("Enter choice (1/2/3/4/5/6/7/8/9/10/11/12/13/14): ")
 
+
+  
         if choice == '14':
             break
 
